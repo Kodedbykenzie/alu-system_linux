@@ -4,4 +4,3 @@
 void process_file(char *filename);
 
 #endif
-

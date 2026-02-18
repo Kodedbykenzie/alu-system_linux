@@ -1,4 +1,4 @@
-OURCE
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>
@@ -93,4 +93,3 @@ void process_file(char *filename)
     munmap(data, st.st_size);
     close(fd);
 }
-
