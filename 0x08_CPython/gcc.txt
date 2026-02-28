@@ -1,0 +1,17 @@
+1. Python List
+gcc -Wall -Werror -Wextra -pedantic -std=c99 -shared -Wl,-soname,PyList -o libPyList.so -fPIC -I/usr/include/python3.9 1-python.c
+
+2. PyBytesObject
+gcc -Wall -Werror -Wextra -pedantic -std=c99 -shared -Wl,-soname,libPython.so -o libPython.so -fPIC -I/usr/include/python3.9 2-python.c
+
+3. PyFloatObject
+gcc -Wall -Werror -Wextra -pedantic -std=c99 -shared -Wl,-soname,libPython.so -o libPython.so -fPIC -I/usr/include/python3.9 3-python.c
+
+4. Python String
+gcc -Wall -Wextra -pedantic -Werror -std=c99 -shared -Wl,-soname,libPython.so -o libPython.so -fPIC -I/usr/include/python3.9 4-python.c
+
+5. Pyhton Integer
+gcc -Wall -Wextra -pedantic -Werror -std=c99 -shared -Wl,-soname,libPython.so -o libPython.so -fPIC -I/usr/include/python3.9 5-python.c
+
+6. Pyhton Integer Advance
+gcc -Wall -Wextra -pedantic -Werror -std=c99 -shared -Wl,-soname,libPython.so.2 -o libPython.so.2 -fPIC -I/usr/include/python3.9 100-python.c
